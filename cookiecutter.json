@@ -1,0 +1,44 @@
+{
+    "full_name": "Name or Organization",
+    "email": "",
+    "github_username": "",
+    "project_name": "Your Project Name",
+    "package_dir_name": "{{ cookiecutter.project_name|replace(' ', '_')|lower }}",
+    "package_dist_name": "{{ cookiecutter.project_name|replace(' ', '-')|lower }}",
+    "repo_name": "{{ cookiecutter.project_name|replace(' ', '-')|lower }}",
+    "project_short_description": "NGS data analysis project",
+    "year": "2019",
+    "minimum_supported_python_version": ["3.6", "3.5", "3.4"],
+    "_copy_without_render": [
+        "*.html",
+        "ref",
+        "data",
+        "results",
+        "*.js"
+    ],
+    "clip_file": [
+        "NexteraPE-PE.fa",
+        "TruSeq2-PE.fa",
+        "TruSeq2-SE.fa",
+        "TruSeq3-PE.fa",
+        "TruSeq3-PE-2.fa",
+        "TruSeq3-SE.fa"
+    ],
+    "basespace_project": "Project as named on basespace",
+    "analysis_type": [
+        "RNA-Seq",
+        "TN-Seq",
+        "NET-Seq",
+        "XR-Seq"
+    ],
+    "run_id": "Run id from basespace",
+    "sample_pattern": "sample",
+    "ref_dir": "/mnt/brick1/ref/Homo_sapiens/UCSC/hg19/Sequence",
+    "ref_name": "human",
+    "num_proc": "30",
+    "basespace_dir": "/mnt/basespace",
+    "use_trimmomatic": "y",
+    "trim_win_len": "20",
+    "trim_win_qual": "20",
+    "trim_min_len": "15"
+}

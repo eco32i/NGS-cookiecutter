@@ -1,0 +1,11 @@
+# These are the requirements for building the tutorial documentation.
+# See a separate requirements.txt file inside the cookiecutter.
+jupyter
+seaborn
+plotnine
+bokeh
+bash_kernel
+-e git+git@github.com:NudlerLab/nlabpy.git
+sphinx
+sphinx-copybutton
+sphinx_rtd_theme
